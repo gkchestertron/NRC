@@ -2,6 +2,7 @@ json.array! @pages do |page|
 	json.title page.title
 	json.id page.id
 	json.set! :layout do 
+		json.set! :id, page.layout.id
 		json.set! :name, page.layout.name
 		json.set! :html, page.layout.html
 		json.set! :page_id, page.layout.page_id
