@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  layout_id: 1
+  parent_selector: MyString
+  text: MyText
+
+two:
+  layout_id: 1
+  parent_selector: MyString
+  text: MyText

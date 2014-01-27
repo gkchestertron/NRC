@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
-  attr_accessible :admin, :email, :password
+  attr_accessible :email, :password
+
   attr_accessor :password
   before_validation :reset_session_token, on: :create
   validates :email, :session_token, :password_digest, presence: true

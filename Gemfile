@@ -9,7 +9,16 @@ gem 'sqlite3'
 
 gem 'bcrypt-ruby', require: 'bcrypt'
 
+gem 'backbone-on-rails'
 
+gem 'jbuilder', '1.0.2'
+
+gem 'ejs'
+
+gem 'bootstrap-sass'
+group :development do
+  gem 'rails_layout'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
