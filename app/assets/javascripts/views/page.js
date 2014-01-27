@@ -33,7 +33,6 @@ NRC.Views.Page = Backbone.View.extend({
 				}
 			});
 		} else {
-			console.log(view.model.get('layout'));
 			var content = new NRC.Models.Content({
 				layout_id: view.model.get('layout').id, 
 				parent_selector: "#" + $contentTag.attr('id'),
