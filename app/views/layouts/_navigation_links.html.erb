@@ -8,4 +8,6 @@
 	NRC.currentUser = new NRC.Models.User({ id: <%= current_user.id %> });
 	NRC.currentUser.fetch();
 </script>
+<% else %>
+	<%= link_to "Sign In", new_session_url, class: "navbar-brand" %>
 <% end %>
