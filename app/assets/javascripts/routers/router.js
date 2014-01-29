@@ -22,5 +22,10 @@ NRC.Routers.Router = Backbone.Router.extend({
 		this._currentView && this._currentView.remove();
 		this._currentView = view;
 		this.$rootEl.html(view.render());
+		if (NRC.currentUser && NRC.currentUser.get('admin')) {
+			_.each($(view.$el.find('.editable')), function (editable) {
+				$(editable).attr('contenteditable', 'true');
+			});
+		}
 	}
 });

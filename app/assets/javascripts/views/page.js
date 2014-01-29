@@ -12,11 +12,6 @@ NRC.Views.Page = Backbone.View.extend({
 			$tag.text(element.get('text'));
 			$tag.data('id', element.id)
 		});
-		if (NRC.currentUser && NRC.currentUser.get('admin')) {
-			_.each($(view.$el.find('.editable')), function (editable) {
-				$(editable).attr('contenteditable', 'true');
-			});
-		}
 		return this.$el;
 	},
 	saveContent: function (event) {
