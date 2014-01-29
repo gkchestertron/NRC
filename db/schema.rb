@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140127062610) do
+ActiveRecord::Schema.define(:version => 20140129182529) do
 
   create_table "contents", :force => true do |t|
     t.integer  "layout_id",       :null => false
@@ -48,12 +48,12 @@ ActiveRecord::Schema.define(:version => 20140127062610) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "password_digest",                                   :null => false
+    t.string   "password_digest",                    :null => false
     t.string   "session_token"
-    t.string   "email",                                             :null => false
-    t.boolean  "admin",           :limit => 255, :default => false, :null => false
-    t.datetime "created_at",                                        :null => false
-    t.datetime "updated_at",                                        :null => false
+    t.string   "email",                              :null => false
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
+    t.boolean  "admin",           :default => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email"
