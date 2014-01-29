@@ -16,6 +16,7 @@ window.NRC = {
 
 $(function () {
 	window.NRC.initialize();
+  $('.content').slideDown('slow');
 });
 
 

@@ -12,6 +12,7 @@ Page.create(title: 'Contact')
 Layout.create(name: 'home', page_id: 1, html: '<div class="row">
   <div class="col-xs-12">
     <h1 id="title" class="editable">Title</h1>
+    <hr>
   </div>
 </div>
 <div class="row">
@@ -26,6 +27,7 @@ Layout.create(name: 'home', page_id: 1, html: '<div class="row">
 Layout.create(name: 'home', page_id: 2, html: '<div class="row">
   <div class="col-xs-12">
     <h1 id="title" class="editable">Title</h1>
+    <hr>
   </div>
 </div>
 <div class="row">
@@ -40,6 +42,7 @@ Layout.create(name: 'home', page_id: 2, html: '<div class="row">
 Layout.create(name: 'home', page_id: 3, html: '<div class="row">
   <div class="col-xs-12">
     <h1 id="title" class="editable">Title</h1>
+    <hr>
   </div>
 </div>
 <div class="row">
