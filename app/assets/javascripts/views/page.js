@@ -28,17 +28,37 @@ NRC.Views.Page = Backbone.View.extend({
 			var content = new NRC.Models.Content({id: id});
 			content.fetch({
 				success: function () {
-					content.set('text', text);
-					content.save();
+					content.save({
+						text: text
+						},
+						{
+						success: function () {
+							NRC.pages.fetch({
+								success: function () {
+									view.render()
+								}
+							})
+						}
+					});
 				}
 			});
 		} else {
 			var content = new NRC.Models.Content({
 				layout_id: view.model.get('layout').id, 
-				parent_selector: "#" + $contentTag.attr('id'),
-				text: text
+				parent_selector: "#" + $contentTag.attr('id')
 			});
-			content.save();
+			content.save({
+				text: text
+			},
+			{
+						success: function () {
+							NRC.pages.fetch({
+								success: function () {
+									view.render()
+								}
+							})
+						}
+					});
 		}
 	},
 	template: JST['pages/show']
