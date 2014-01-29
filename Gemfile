@@ -5,7 +5,7 @@ gem 'rails', '3.2.15'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+
 
 gem 'bcrypt-ruby', require: 'bcrypt'
 
@@ -17,7 +17,12 @@ gem 'ejs'
 
 gem 'bootstrap-sass'
 group :development do
+	gem 'sqlite3'
   gem 'rails_layout'
+end
+
+group :production do 
+	gem 'pg'
 end
 
 # Gems used only for assets and not required
