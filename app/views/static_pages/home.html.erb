@@ -1,1 +1,16 @@
+<div class="wrapper col-xs-8 col-xs-offset-2">
 <div id="content"></div>
+
+<div class="row">
+	<div class="col-xs-12">
+		<% unless current_user %>
+			<form action="/session" method="POST">
+				<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"> 
+				<input type="hidden" name="user[email]" value="guest@nrccms.com">
+				<input type="hidden" name="user[password]" value="foobies">
+				<input type="submit" value="Sign in as Guest" class="btn btn-large btn-primary">
+			</form>
+		<% end %>
+</div>
+</div>
+</div>

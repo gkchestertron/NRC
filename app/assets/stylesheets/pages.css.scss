@@ -10,12 +10,23 @@ body {
   background-size: cover;
 }
 
-.container {
+.wrapper {
 	background: rgba(200,200,200,0.9);
+	padding-bottom: 50px;
+	-webkit-border-bottom-right-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+
+.container {
+
 }
 
 .content {
-	padding-bottom: 50px;
+
 }
 
 h1 {
@@ -43,5 +54,5 @@ main {
 }
 
 p {
-	font-size: 14px;
+	font-size: 15px;
 }
