@@ -1,6 +1,6 @@
 NRC.Views.Page = Backbone.View.extend({
 	events: {
-		'input .editable': 'saveContent'
+		'focusout .editable': 'saveContent'
 	},
 	render: function () {
 		var view = this;
