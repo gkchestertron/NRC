@@ -33,11 +33,7 @@ NRC.Views.Page = Backbone.View.extend({
 						},
 						{
 						success: function () {
-							NRC.pages.fetch({
-								success: function () {
-									view.render()
-								}
-							})
+							NRC.pages.fetch();
 						}
 					});
 				}
@@ -52,11 +48,7 @@ NRC.Views.Page = Backbone.View.extend({
 			},
 			{
 						success: function () {
-							NRC.pages.fetch({
-								success: function () {
-									view.render()
-								}
-							})
+							NRC.pages.fetch();
 						}
 					});
 		}
